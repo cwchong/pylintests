@@ -20,7 +20,8 @@ class HelloWorldASTChecker(BaseChecker):
             self.add_message(
                 'C9001', node=node)
         else:
-            print('nope: ', node.value)
+            pass
+            # print('nope: ', node.value)
             # means not good enough, since concat is missed out
             # need combined string or function args instead
 

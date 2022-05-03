@@ -14,9 +14,8 @@ def test():
     return 5
 
 def test2():
-    if True:
-        return 1
-    return 5
+    aaa = "Hello, world!"
+    return "Hello, world!"
 
 def test3():
     random.randint(1, 10)
