@@ -5,6 +5,7 @@ import sklearn as sk
 from random import randint
 from urllib.parse import quote as qt
 import urllib.parse as ps
+# TODO: multiple import in single line
 
 # ensure PYTHONPATH is set to the myplugins path
 def test():
@@ -19,7 +20,7 @@ def test2():
 
 def test3():
     random.randint(1, 10)
-    randint(2,4)
+    randint(2,4) # this needs to fail as well
     ps.quote('testing321')
     # random.random()
     if random.random() > 0.5:
@@ -56,7 +57,7 @@ local_path4 = "home/"
 local_path5 = "/cdsw"
 local_path6 = "/home"
 # test4('/home/something')
-qt('testing')
+qt('testing') # this should fail as well
 # false positives
 cdsw_safe = "nothing"
 
